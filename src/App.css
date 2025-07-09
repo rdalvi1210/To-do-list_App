@@ -1,0 +1,36 @@
+/* App.css */
+
+.todo-bg {
+  background: linear-gradient(to bottom right, #dee9ff, #e7f2ff);
+}
+
+.todo-container {
+  max-width: 600px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.input-glow:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  border-color: #80bdff;
+}
+
+.task-item {
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.task-item:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.btn-group .btn {
+  margin-left: 4px;
+}
+
+@media (max-width: 576px) {
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
