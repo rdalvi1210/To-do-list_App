@@ -4,6 +4,12 @@ A fully responsive and user-friendly **To-Do List App** built with **React** and
 
 ---
 
+## 📸 My App
+
+![Todo List App Screenshot](./src/assets/myapp.png)
+
+---
+
 ## 🚀 Features
 
 - ✅ Add new tasks
@@ -13,12 +19,6 @@ A fully responsive and user-friendly **To-Do List App** built with **React** and
 - ✅ Tasks are saved in browser **Local Storage**
 - ✅ Fully **responsive** UI using Bootstrap
 - ✅ Clean and modern user interface
-
----
-
-## 📸 Screenshot
-
-![Todo List App Screenshot](./src/assets/myapp.png)
 
 ---
 
