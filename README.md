@@ -1,12 +1,43 @@
-# React + Vite
+# 📝 To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive and user-friendly **To-Do List App** built with **React** and **Bootstrap**. This app allows you to manage your daily tasks, mark them as completed, edit, delete, and store them using local storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add new tasks
+- ✅ Edit existing tasks
+- ✅ Mark tasks as complete/incomplete
+- ✅ Delete tasks
+- ✅ Tasks are saved in browser **Local Storage**
+- ✅ Fully **responsive** UI using Bootstrap
+- ✅ Clean and modern user interface
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshot
+
+![Todo List App Screenshot](./src/assets/myapp.png)
+
+> 📌 Make sure to replace the path above with the actual path to your image.
+
+---
+
+## 🛠️ Tech Stack
+
+- React.js (via Vite)
+- Bootstrap 5
+- JavaScript (ES6+)
+- Local Storage API
+
+---
+
+## 📦 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rdalvi1210/To-do-list_App.git
+cd todo-app
+```
