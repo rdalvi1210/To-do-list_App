@@ -37,5 +37,5 @@ A fully responsive and user-friendly **To-Do List App** built with **React** and
 
 ```bash
 git clone https://github.com/rdalvi1210/To-do-list_App.git
-cd todo-app
+cd To-do-list_App
 ```
