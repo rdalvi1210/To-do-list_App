@@ -20,8 +20,6 @@ A fully responsive and user-friendly **To-Do List App** built with **React** and
 
 ![Todo List App Screenshot](./src/assets/myapp.png)
 
-> 📌 Make sure to replace the path above with the actual path to your image.
-
 ---
 
 ## 🛠️ Tech Stack
