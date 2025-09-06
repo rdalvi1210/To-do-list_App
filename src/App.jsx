@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import { useEffect, useState } from "react";
+import "./App.css";
 
 const App = () => {
   const [task, setTask] = useState("");
@@ -54,6 +54,7 @@ const App = () => {
       <div className="todo-container card shadow-lg p-4 w-100">
         <h2 className="mb-4 text-center text-dark fw-bold">📝 To-Do List</h2>
 
+        {/* Input + Button Row */}
         <div className="row g-2 mb-3">
           <div className="col-12 col-md-8">
             <input
@@ -66,7 +67,7 @@ const App = () => {
           </div>
           <div className="col-12 col-md-4 d-grid">
             <button
-              className={`btn btn-lg ${
+              className={`btn btn-lg w-100 ${
                 editIndex !== null ? "btn-warning" : "btn-primary"
               }`}
               onClick={handleAddTask}
@@ -76,8 +77,10 @@ const App = () => {
           </div>
         </div>
 
+        {/* Error Alert */}
         {error && <div className="alert alert-danger py-2">{error}</div>}
 
+        {/* Task List */}
         <ul className="list-group mt-3">
           {tasks.length === 0 ? (
             <li className="list-group-item text-center text-muted">
@@ -87,14 +90,15 @@ const App = () => {
             tasks.map((t, index) => (
               <li
                 key={index}
-                className={`list-group-item d-flex justify-content-between align-items-center task-item px-3 py-3 ${
+                className={`list-group-item d-flex flex-wrap justify-content-between align-items-start gap-2 task-item px-3 py-3 ${
                   t.completed ? "list-group-item-success" : ""
                 }`}
               >
-                <div className="form-check d-flex align-items-center">
+                {/* Checkbox + Task */}
+                <div className="form-check d-flex align-items-start flex-grow-1">
                   <input
                     type="checkbox"
-                    className="form-check-input me-2"
+                    className="form-check-input me-2 mt-1"
                     checked={t.completed}
                     onChange={() => toggleComplete(index)}
                     id={`task-${index}`}
@@ -110,7 +114,9 @@ const App = () => {
                     {t.text}
                   </label>
                 </div>
-                <div className="btn-group">
+
+                {/* Action Buttons */}
+                <div className="btn-group ms-auto">
                   <button
                     className="btn btn-sm btn-outline-secondary"
                     onClick={() => handleEdit(index)}

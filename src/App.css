@@ -28,6 +28,16 @@
   margin-left: 4px;
 }
 
+.todo-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.task-item {
+  word-break: break-word; /* long tasks wrap */
+  white-space: normal; /* ensure 2+ line tasks don't overflow */
+}
+
 @media (max-width: 576px) {
   .btn-lg {
     font-size: 1rem;
